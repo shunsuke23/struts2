@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts configuration 2.3//EN""http://struts.apache.org.dtds/struts-2.3.dtd">
+
+
+ <struts>
+ <constant name="struts.custom.i18n.resources" value="com.internousdev.struts2.property.main,com.internousdev.struts2.property.login" />
+
+ <package name="com.internous.dev.struts2.action" extend="struts-default">
+
+ <action name="LoginAction" class="com.internous.dev.struts2.action.LoginAvtion" method="execute">
+ 	<result name="success">loginSuccess.jsp</result>
+
+ 	<result name="error">loginError.jsp</result>
+</action>
+
+ </package>
+ </struts>
